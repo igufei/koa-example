@@ -1,0 +1,31 @@
+{
+  "name": "koatest",
+  "version": "1.1.10.30",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/bin/server.js",
+    "start:dev": "nodemon --watch /**/* -e ts,tsx --exec ts-node ./bin/main.ts",
+    "build": "tsc -p tsconfig.json"
+  },
+  "author": "igufei",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.0",
+    "koa": "^2.6.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-jwt": "^3.5.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "mongodb": "^3.1.13",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.3.0",
+    "@types/koa": "^2.0.46",
+    "@types/koa-bodyparser": "^4.2.2",
+    "@types/koa-router": "^7.0.40",
+    "@types/koa-static": "^4.0.0",
+    "@types/mongodb": "^3.1.19"
+  }
+}
